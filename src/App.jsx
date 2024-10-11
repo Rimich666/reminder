@@ -1,24 +1,16 @@
 import Header from './header/header.jsx';
-import {useState} from 'react';
 import Modal from './modal/modal.jsx';
+import {useSelector} from 'react-redux';
 
 function App() {
-  const [modal, setModal] = useState(false);
-  const showModal = (modal) => {
-    setModal(true);
-  }
-
-  const closeModal = () => {
-    setModal(false);
-  }
-
+  const modal = useSelector(state => state.modal);
   return (
     <div className={'container'}>
-      <Header onAddClick={showModal}/>
+      <Header/>
       <main>
         Main
       </main>
-      <Modal show={modal} closeHandler={closeModal}/>
+      <Modal show={modal}/>
     </div>
   )
 }

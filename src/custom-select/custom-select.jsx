@@ -6,7 +6,6 @@ export default function CustomSelect({callback, options, value, title}) {
   const [selection, setSelection] = useState(options[value]);
 
   const arrowClickHandle = () => {
-    console.log(isOpen);
     setIsOpen(!isOpen);
   };
 

@@ -10,12 +10,17 @@
   --foreground: #ffffff;
   --border: #1c1d24;
   --card: #18191f;
-  --popover: #111217;
-  --primary: #60F947;
-  --primary-foreground: #0f1014;
-  --primary-foreground-hover: #464d71;
-  --primary-hover: #388632;
+  --popover: #11141E;
+  --primary: #388632;
+  --primary-foreground: #464d71;
+  --primary-foreground-hover: #0f1014;
+  --primary-hover: #60F947;
   --modal: #f7f7f810;
+  --field-title: #A8ACC6;
+  --secondary: #7b3535;
+  --secondary-hover: #FF6262;
+  --secondary-foreground: #1f264f;
+
 }
 
 body {

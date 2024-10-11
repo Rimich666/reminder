@@ -9,7 +9,6 @@ export const reminderSlice = createSlice({
   reducers: {
     add: (state, action) => {
       state.reminder.push({...action.payload, state: ReminderState.expected});
-      console.log(state.reminder);
     },
     remove: (state, action) => {
       console.log(state.reminder);

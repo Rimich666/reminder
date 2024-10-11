@@ -11,7 +11,7 @@ export default function Modal({mode}) {
       <div className={'modal_container'}>
         <div className={'modal_head'}>
           <h2>{'Новое напоминание'}</h2>
-          <button onClick={() => {dispatch(close())}}>
+          <button onClick={() => {dispatch(close())}} className={'cross_button'}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.25 6.75L6.75 17.25" stroke="#B0B0B6" strokeWidth="1.5" strokeLinecap="round"
                     strokeLinejoin="round"/>

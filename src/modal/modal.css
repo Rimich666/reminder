@@ -90,3 +90,7 @@
   background-color: var(--secondary-hover);
   color: var(--primary-foreground-hover);
 }
+
+.cross_button {
+  cursor: pointer;
+}

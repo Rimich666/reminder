@@ -1,0 +1,13 @@
+.table_header {
+  position: sticky;
+  top: 0;
+}
+
+.table_footer {
+  position: sticky;
+  bottom: 0;
+}
+
+.table_row {
+
+}

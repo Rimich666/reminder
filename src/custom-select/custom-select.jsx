@@ -1,7 +1,7 @@
 import './custom-select.css'
 import {useState} from 'react';
 
-export default function CustomSelect({callback, options, value}) {
+export default function CustomSelect({callback, options, value, title}) {
   const [isOpen, setIsOpen] = useState(false);
   const [selection, setSelection] = useState(options[value]);
 
@@ -25,6 +25,7 @@ export default function CustomSelect({callback, options, value}) {
 
   return (
     <div className={'select_container'}>
+      <span className={'select_title'}>{title}</span>
       <div className={'custom_select'}>
         <span className={'selection'}>{selection}</span>
         <button
@@ -38,7 +39,7 @@ export default function CustomSelect({callback, options, value}) {
         </button>
         <ul className={`select_list${isOpen ? ' is_open' : ' is_close'}`} role="listbox">
           {Object.keys(options).map((key) => (
-            <li role={'presentation'} title={key} key={key} onClick={selectHandle}>
+            <li role={'presentation'} className={'select_item'} title={key} key={key} onClick={selectHandle}>
               {options[key]}
             </li>
           ))}

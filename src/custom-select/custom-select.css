@@ -1,17 +1,18 @@
 .select_container {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   height: 42px;
-  width: 212px;
+  width: 100%;
 }
 
 .custom_select {
   position: relative;
-  width: 212px;
+  width: 152px;
   height: 42px;
-  border: solid 1px var(--border);
+  /*border: solid 1px var(--border);*/
+  border: solid 1px var(--primary);
   border-radius: 8px;
   background-color: var(--background);
   display: grid;
@@ -27,9 +28,18 @@
   list-style: none;
   gap: 4px;
   top: 48px;
-  max-height: 96px;
+  left: 1px;
+  max-height: 120px;
+  padding: 0;
   border: solid 1px var(--card);
+  cursor: pointer;
   background-color: var(--popover);
+}
+
+.select_item {
+  border: 1px solid var(--foreground);
+  border-radius: 8px;
+  padding: 5px 8px;
 }
 
 .selection {
@@ -43,11 +53,12 @@
 }
 
 .select_title {
+  margin: auto;
   font-size: small;
   font-weight: normal;
   line-height: 18px;
   height: 18px;
-  color: var(--popover);
+  color: var(--foreground);
   text-align: left;
 }
 

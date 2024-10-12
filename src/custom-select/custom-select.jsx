@@ -16,7 +16,7 @@ export default function CustomSelect({callback, options, value, title}) {
   };
 
   const arrow =
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style={{cursor: 'pointer'}}>
         <path d="M12.7083 8.9585L9.99996 11.8752L7.29163 8.9585" stroke="#B0B0B6" strokeWidth="1.5"
               strokeLinecap="round" strokeLinejoin="round"/>
       </svg>

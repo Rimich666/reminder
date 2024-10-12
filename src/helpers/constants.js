@@ -8,3 +8,16 @@ export const ReminderState = {
   completed: 1,
   all: 2
 }
+
+export const STATES = ['Ещё рано', 'Выполнено']
+
+export const FILTERS = ['Ожидаемые', 'Выполненные', 'Все'];
+
+export const HEADERS = ['ID', 'Дата', 'Описание', 'Статус', 'Действия'];
+export const SORT_OPTIONS = ['date', 'description', 'status', 'ID'];
+export const SORT_TITLES = ['Время', 'Описание', 'Статус', 'ID'];
+
+export const Orders = {
+  asc: -1,
+  desc: 1
+}

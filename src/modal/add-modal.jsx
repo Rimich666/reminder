@@ -8,8 +8,6 @@ export default function AddModal() {
   const description = useSelector((state) => state.modal.description);
   const date = useSelector((state) => state.modal.date);
 
-  console.log(date, description);
-
   const clickCancelHandle = () => {
     dispatch(setDescription(''));
     dispatch(close());

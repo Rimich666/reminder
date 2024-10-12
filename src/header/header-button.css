@@ -9,9 +9,26 @@
   font-weight: bold;
   cursor: pointer;
   padding: 0 8px;
+  margin: auto 0;
 }
 
 .header_button:hover {
-  background-color: var(--primary-hover);
-  color: var(--primary-foreground-hover);
+  opacity: 50%;
+}
+
+.order {
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  margin: auto 8px auto 0;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.order:hover {
+  opacity: 50%;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }

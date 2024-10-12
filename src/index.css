@@ -11,14 +11,17 @@
   --border: #1c1d24;
   --card: #18191f;
   --popover: #11141E;
-  --primary: #388632;
-  --primary-foreground: #464d71;
-  --primary-foreground-hover: #0f1014;
-  --primary-hover: #60F947;
+  --primary: #60F947;
+  --primary50: rgba(96, 249, 71, 0.5);
+  --primary20: rgba(96, 249, 71, 0.2);
+  --primary-foreground: #0f1014;
+  --primary-foreground-hover: #464d71;
+  --primary-hover: #388632;
   --modal: #f7f7f810;
   --field-title: #A8ACC6;
-  --secondary: #7b3535;
-  --secondary-hover: #FF6262;
+  --secondary: #FF6262;
+  --secondary20: rgba(255, 98, 98, 0.2);
+  --secondary-hover: #7b3535;
   --secondary-foreground: #1f264f;
 
 }
@@ -38,7 +41,9 @@ body {
   width: 100vw;
   max-width: 1440px;
   margin: auto;
-  border: 1px springgreen solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 main {

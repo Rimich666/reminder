@@ -10,11 +10,8 @@ export default function PickerInput (){
   const fp = useRef(null);
   const dispatch = useDispatch()
   const date = useSelector((state) => state.modal.date);
-  console.log(date);
   const currentDate = date ? new Date(date) : new Date(Date.now() + TEN_MINUTES);
   const changeHandle = (selectedDates) => {
-    console.log(selectedDates[0]);
-    console.log(selectedDates[0].getTime());
     dispatch(setDate(selectedDates[0].getTime()));
   };
 

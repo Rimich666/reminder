@@ -1,9 +1,10 @@
 import PickerInput from './picker-input.jsx';
 import {useDispatch, useSelector} from 'react-redux';
 import {close, setDescription} from '../store/modal-slice.js';
-import {add} from '../store/reminder-slice.js';
+import {add, edit} from '../store/reminder-slice.js';
+import {ADD_MODE} from '../helpers/constants.js';
 
-export default function AddModal() {
+export default function AddModal({id}) {
   const dispatch = useDispatch();
   const description = useSelector((state) => state.modal.description);
   const date = useSelector((state) => state.modal.date);
@@ -18,7 +19,11 @@ export default function AddModal() {
   }
 
   const clickSaveHandle = () => {
-    dispatch(add({description, date}));
+    if (id === ADD_MODE) {
+      dispatch(add({description, date}));
+    } else {
+      dispatch(edit({id, description, date}))
+    }
     dispatch(close());
   }
 

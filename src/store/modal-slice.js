@@ -1,5 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit';
-import {TEN_MINUTES} from '../helpers/constants.js';
+import {ADD_MODE, TEN_MINUTES} from '../helpers/constants.js';
 
 export const modalSlice = createSlice({
   name: 'modal',
@@ -15,9 +15,15 @@ export const modalSlice = createSlice({
       state.description = '';
     },
     openModal: (state, action) => {
-      state.date = Date.now() + TEN_MINUTES;
-      state.description = '';
-      state.modal = action.payload;
+      if (action.payload === ADD_MODE) {
+        state.date = Date.now() + TEN_MINUTES;
+        state.description = '';
+        state.modal = action.payload;
+        return;
+      }
+      state.date = action.payload.date;
+      state.description = action.payload.description;
+      state.modal = action.payload.ID;
     },
     setDate: (state, action) => {
       console.log(action.payload);

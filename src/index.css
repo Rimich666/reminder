@@ -23,7 +23,8 @@
   --secondary20: rgba(255, 98, 98, 0.2);
   --secondary-hover: #7b3535;
   --secondary-foreground: #1f264f;
-
+  --odd: #171924;
+  --even: #10131C;
 }
 
 body {

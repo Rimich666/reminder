@@ -70,10 +70,11 @@ export const reminderSlice = createSlice({
       state.reminder.push({...action.payload, state: ReminderState.expected});
     },
     remove: (state, action) => {
-      console.log(state.reminder);
+      state.reminder.splice(action.payload, 1);
     },
     edit: (state, action) => {
-      console.log(state.reminder);
+      state.reminder[action.payload.id].description = action.payload.description;
+      state.reminder[action.payload.id].date = action.payload.date;
     },
   }
 })

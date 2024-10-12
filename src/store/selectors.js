@@ -1,5 +1,5 @@
 import {createSelector} from '@reduxjs/toolkit';
-import {SORT_OPTIONS} from '../helpers/constants.js';
+import {ReminderState, SORT_OPTIONS} from '../helpers/constants.js';
 
 const selectSort = (state) => state.options.sort;
 const selectFilter = (state) => state.options.filter;
@@ -39,4 +39,13 @@ export const selectReminder =
       return copy;
     }
   )
+
+const selectCheck = (state) => state.reminder.check;
+
+export const selectActive = createSelector(
+  [selectCheck, selectReminderSimple], (check, reminders) => {
+    return reminders.map((rem, i) => ({...rem, ID: i}))
+      .filter((rem) => rem.status === ReminderState.expected && rem.date <= check);
+  }
+)
 

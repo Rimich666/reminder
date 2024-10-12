@@ -22,8 +22,8 @@ export default function FillSection({reminders}) {
           <p>{STATES[rem.status]}</p>
           <div className={'actions'}>
             {rem.status === ReminderState.expected &&
-              <button className={'action_edit'} value={i} onClick={editClickHandle}>Редактировать</button>}
-            <button className={'action_delete'} value={rem.ID} onClick={deleteClickHandle}>Удалить</button>
+              <button className={'actions_button action_edit'} value={i} onClick={editClickHandle}>Редактировать</button>}
+            <button className={'actions_button action_delete'} value={rem.ID} onClick={deleteClickHandle}>Удалить</button>
           </div>
         </li>)}
     </ul>

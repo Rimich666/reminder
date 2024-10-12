@@ -1,0 +1,57 @@
+.messages_modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 350px;
+  width: 10vw;
+  z-index: 15;
+  background-color: var(--modal);
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.messages_modal-visible {
+  display: flex;
+}
+
+.messages_container {
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+  padding: 0.5vh;
+}
+
+.message_container {
+  height: 5vh;
+  background-color: var(--popover70);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.message_del {
+
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1vh;
+  padding: 0 0.5vh;
+}
+
+.box p {
+  margin: 0;
+}
+.date {
+  color: var(--field-title)
+}
+
+
+.description {
+  color: var(--foreground);
+  font-size: small;
+  font-weight: bolder;
+}

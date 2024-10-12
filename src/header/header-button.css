@@ -22,7 +22,6 @@
   width: 30px;
   margin: auto 8px auto 0;
   cursor: pointer;
-  transition: 2s;
 }
 
 .order:hover {
@@ -31,4 +30,5 @@
 
 .rotate {
   transform: rotate(180deg);
+  transition: 2s;
 }

@@ -11,6 +11,8 @@
   --border: #1c1d24;
   --card: #18191f;
   --popover: #11141E;
+  --popover50: rgba(17, 20, 30, 0.5);
+  --popover70: rgba(17, 20, 30, 0.7);
   --primary: #60F947;
   --primary50: rgba(96, 249, 71, 0.5);
   --primary20: rgba(96, 249, 71, 0.2);

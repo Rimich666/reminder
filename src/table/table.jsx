@@ -9,7 +9,6 @@ export default function Table() {
   const reminders = useSelector(selectReminder);
   const isEmpty = reminders.length === 0;
 
-  console.log(reminders);
   return (
     <main className={'table_container'}>
       <header className={'table_header grid_row'}>

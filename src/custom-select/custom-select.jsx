@@ -24,9 +24,8 @@ export default function CustomSelect({callback, options, value, title}) {
 
   return (
     <div className={'select_container'}>
-      <span className={'select_title'}>{title}</span>
       <div className={'custom_select'}>
-        <span className={'selection'}>{selection}</span>
+        <span className={'selection'}>{`${title}: ${selection}`}</span>
         <button
           className={'select_button'}
           type="button"

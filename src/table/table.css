@@ -1,6 +1,8 @@
 .table_container {
   margin: 0 auto;
-  width: 100%;
+  max-width: 1280px;
+  width: calc(1280% / 14.4);
+  padding: 0 1%;
 }
 
 .table_header {
@@ -75,6 +77,12 @@
   color: var(--primary);
 }
 
+.action_edit-disabled {
+  background-color: var(--primary20);
+  color: var(--background);
+  cursor: auto;
+}
+
 .action_delete {
   background-color: var(--secondary20);
   color: var(--secondary);
@@ -86,4 +94,32 @@
 
 .even {
   background-color: var(--even);
+}
+
+@media (max-width: 1280px) {
+  .table_container {
+    width: auto;
+    margin: 0;
+    padding: 0 2%;
+  }
+}
+
+@media (max-width: 800px) {
+  .table_container {
+    font-size: small;
+  }
+}
+
+@media (max-width: 600px) {
+  .table_container {
+    font-size: x-small;
+  }
+  .actions {
+    flex-direction: column;
+    gap: 3px;
+  }
+  .actions_button {
+    height: 1.5vh;
+    font-size: x-small;
+  }
 }

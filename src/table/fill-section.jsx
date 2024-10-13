@@ -10,7 +10,11 @@ export default function FillSection({reminders}) {
     dispatch(remove(evt.target.value));
   }
   const editClickHandle = (evt) => {
-    dispatch(openModal(reminders[evt.target.value]));
+    const rem = reminders[evt.target.value];
+    if (rem.status === ReminderState.completed) {
+      return;
+    }
+    dispatch(openModal(rem));
   }
   return (
     <ul className={'table'} style={{gridTemplateRows: `repeat(${rowCount}, 1fr)`}}>
@@ -21,8 +25,9 @@ export default function FillSection({reminders}) {
           <p>{rem.description}</p>
           <p>{STATES[rem.status]}</p>
           <div className={'actions'}>
-            {rem.status === ReminderState.expected &&
-              <button className={'actions_button action_edit'} value={i} onClick={editClickHandle}>Редактировать</button>}
+            <button
+              className={`actions_button action_edit${rem.status === ReminderState.completed ?'-disabled' : ''}`}
+              value={i} onClick={editClickHandle}>Редактировать</button>
             <button className={'actions_button action_delete'} value={rem.ID} onClick={deleteClickHandle}>Удалить</button>
           </div>
         </li>)}

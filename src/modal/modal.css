@@ -59,6 +59,7 @@
   color: var(--foreground);
   width: 100%;
   height: 40%;
+  font-size: x-large;
 }
 
 .modal_button {

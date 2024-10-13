@@ -8,9 +8,11 @@
   -moz-osx-font-smoothing: grayscale;
   --background: #0E1018;
   --foreground: #ffffff;
-  --border: #1c1d24;
+  /*--border: #1B1D2A;*/
+  --border: #1a1c28;
   --card: #18191f;
   --popover: #11141E;
+  --popover20: rgba(17, 20, 30, 0.2);
   --popover50: rgba(17, 20, 30, 0.5);
   --popover70: rgba(17, 20, 30, 0.7);
   --primary: #60F947;
@@ -48,13 +50,6 @@ body {
   flex-direction: column;
   gap: 1vh;
 }
-
-main {
-  max-width: 1280px;
-  padding: 0 12px;
-  margin: 0 auto;
-}
-
 
 /*@media (prefers-color-scheme: light) {*/
 /*  :root {*/

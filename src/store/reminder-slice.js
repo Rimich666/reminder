@@ -62,7 +62,7 @@ const remindFake = [
 export const reminderSlice = createSlice({
   name: 'reminders',
   initialState: {
-    reminder: remindFake,
+    reminder: [],
     check: 0
   },
   reducers: {

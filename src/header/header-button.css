@@ -5,7 +5,8 @@
   border-radius: 8px;
   min-width: 40px;
   width: 100%;
-  font-size: large;
+  max-width: 152px;
+  font-size: small;
   font-weight: bold;
   cursor: pointer;
   padding: 0 8px;
@@ -31,4 +32,8 @@
 .rotate {
   transform: rotate(180deg);
   transition: 2s;
+}
+
+.sort_arrow {
+  margin: auto;
 }

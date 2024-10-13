@@ -2,9 +2,9 @@ import "flatpickr/dist/themes/dark.css";
 import {useRef} from 'react';
 import './picker-input.css';
 import Flatpickr from 'react-flatpickr';
-import {LOCALE, TEN_MINUTES} from '../helpers/constants.js';
+import {LOCALE, TEN_MINUTES} from '../../helpers/constants.js';
 import {useDispatch, useSelector} from 'react-redux';
-import {setDate} from '../store/modal-slice.js';
+import {setDate} from '../../store/modal-slice.js';
 
 export default function PickerInput (){
   const fp = useRef(null);

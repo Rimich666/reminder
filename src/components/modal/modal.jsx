@@ -1,8 +1,8 @@
 import './modal.css'
 import AddModal from './add-modal.jsx';
 import {useDispatch} from 'react-redux';
-import {close} from '../store/modal-slice.js';
-import {ADD_MODE} from '../helpers/constants.js';
+import {close} from '../../store/modal-slice.js';
+import {ADD_MODE} from '../../helpers/constants.js';
 
 export default function Modal({mode}) {
   const show = mode !== null;

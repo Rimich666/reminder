@@ -1,9 +1,9 @@
 import CustomSelect from '../custom-select/custom-select.jsx';
 import HeaderButton from './header-button.jsx';
-import {FILTERS, SORT_TITLES} from '../helpers/constants.js';
+import {FILTERS, SORT_TITLES} from '../../helpers/constants.js';
 import {useDispatch, useSelector} from 'react-redux';
-import {selectOptions} from '../store/selectors.js';
-import {setFilter, setOrder, setSortOption} from '../store/option-slice.js';
+import {selectOptions} from '../../store/selectors.js';
+import {setFilter, setOrder, setSortOption} from '../../store/option-slice.js';
 
 export default function RightHeader({onAddClick}) {
   const dispatch = useDispatch();

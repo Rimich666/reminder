@@ -1,10 +1,10 @@
 import './message.css';
-import {check} from '../store/reminder-slice.js';
+import {check} from '../../store/reminder-slice.js';
 import {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {INTERVAL} from '../helpers/constants.js';
+import {INTERVAL} from '../../helpers/constants.js';
 import Message from './message.jsx';
-import {selectActive} from '../store/selectors.js';
+import {selectActive} from '../../store/selectors.js';
 
 export default function Massages() {
   const dispatch = useDispatch();

@@ -20,20 +20,20 @@
 .order {
   background-color: transparent;
   height: 30px;
-  width: 30px;
+  width: 22px;
   margin: auto 8px auto 0;
   cursor: pointer;
-}
-
-.order:hover {
-  opacity: 50%;
+  transition: 2s;
 }
 
 .rotate {
   transform: rotate(180deg);
-  transition: 2s;
 }
 
 .sort_arrow {
   margin: auto;
+}
+
+.sort_arrow:hover {
+  opacity: 50%;
 }

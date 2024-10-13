@@ -1,6 +1,6 @@
-import {LOCALE} from '../helpers/constants.js';
+import {LOCALE} from '../../helpers/constants.js';
 import {useDispatch} from 'react-redux';
-import {complete, move} from '../store/reminder-slice.js';
+import {complete, move} from '../../store/reminder-slice.js';
 
 export default function Message({rem}) {
   const dispatch = useDispatch();

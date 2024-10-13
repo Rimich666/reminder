@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from 'react-redux';
-import {setSearch} from '../store/option-slice.js';
-import {LEN} from '../helpers/constants.js';
+import {setSearch} from '../../store/option-slice.js';
+import {LEN} from '../../helpers/constants.js';
 
 export default function LeftHeader() {
   const dispatch = useDispatch();

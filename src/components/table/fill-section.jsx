@@ -1,7 +1,7 @@
-import {LOCALE, ReminderState, STATES} from '../helpers/constants.js';
+import {LOCALE, ReminderState, STATES} from '../../helpers/constants.js';
 import {useDispatch} from 'react-redux';
-import {openModal} from '../store/modal-slice.js';
-import {remove} from '../store/reminder-slice.js';
+import {openModal} from '../../store/modal-slice.js';
+import {remove} from '../../store/reminder-slice.js';
 
 export default function FillSection({reminders}) {
   const dispatch = useDispatch();

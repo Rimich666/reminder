@@ -1,9 +1,9 @@
 import './table.css';
 import {useSelector} from 'react-redux';
-import {HEADERS} from '../helpers/constants.js';
+import {HEADERS} from '../../helpers/constants.js';
 import EmpySection from './empy-section.jsx';
 import FillSection from './fill-section.jsx';
-import {selectReminder} from '../store/selectors.js';
+import {selectReminder} from '../../store/selectors.js';
 
 export default function Table() {
   const reminders = useSelector(selectReminder);

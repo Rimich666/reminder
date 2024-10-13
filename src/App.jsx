@@ -1,8 +1,8 @@
-import Header from './header/header.jsx';
-import Modal from './modal/modal.jsx';
+import Header from './components/header/header.jsx';
+import Modal from './components/modal/modal.jsx';
 import {useSelector} from 'react-redux';
-import Table from './table/table.jsx';
-import Massages from './messages/massages.jsx';
+import Table from './components/table/table.jsx';
+import Massages from './components/messages/massages.jsx';
 
 function App() {
   const modal = useSelector(state => state.modal.modal);
